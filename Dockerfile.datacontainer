@@ -15,8 +15,8 @@
 
 # Docker file for UMD User Interface
 #
-FROM mysql
+FROM alpine
 MAINTAINER Bruce Becker <bbecker@csir.co.za>
-CMD ['mkdir','/dbdata']
-WORKDIR ['/dbdata']
-ENTRYPOINT ['/bin/true']
+CMD ["mkdir","/dbdata"]
+WORKDIR ["dbdata"]
+ENTRYPOINT ["/bin/true"]
